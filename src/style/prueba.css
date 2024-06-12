@@ -1,0 +1,32 @@
+/* src/components/Geology.css */
+.geology-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .complementary-subjects,
+  .itineraries {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .info-icon {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
