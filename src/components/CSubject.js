@@ -1,7 +1,7 @@
 // src/components/ComplementarySubjects.js
 import React from 'react';
 
-const ComplementarySubjects = () => {
+const CSubject = () => {
   return (
     <div className="complementary-subjects">
       <i className="info-icon">ℹ️</i>
@@ -13,4 +13,4 @@ const ComplementarySubjects = () => {
   );
 };
 
-export default ComplementarySubjects;
+export default CSubject;

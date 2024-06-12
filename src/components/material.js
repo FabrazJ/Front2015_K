@@ -1,17 +1,16 @@
 // src/components/Geology.js
 import React from 'react';
-import ComplementarySubjects from './ComplementarySubjects';
-import Itineraries from './Itineraries';
-import './prueba.css'; // Optional for specific styles
-
-const Geology = () => {
+import CSubject from './CSubject';
+import itineraries from './itineraries';
+import './style/prueba.css'
+const material = () => {
   return (
-    <div className="geology-container">
+    <div className="material-container">
       <h1>Geología</h1>
-      <ComplementarySubjects />
-      <Itineraries />
+      <CSubject />
+      <itineraries />
     </div>
   );
 };
 
-export default Geology;
+export default material;
