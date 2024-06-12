@@ -7,7 +7,7 @@ import '../style/prueba.css'
 const Material = () => {
   return (
     <div className="material-container">
-      <h1>___________-</h1>
+      <h1>___________</h1>
       <CSubject />
       <Itineraries/>
     </div>
