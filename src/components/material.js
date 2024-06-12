@@ -2,7 +2,7 @@
 import React from 'react';
 import ComplementarySubjects from './ComplementarySubjects';
 import Itineraries from './Itineraries';
-import './Geology.css'; // Optional for specific styles
+import './prueba.css'; // Optional for specific styles
 
 const Geology = () => {
   return (
