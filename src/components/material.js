@@ -2,7 +2,7 @@
 import React from 'react';
 import CSubject from './CSubject';
 import itineraries from './itineraries';
-import './style/prueba.css'
+import '../style/prueba.css'
 const material = () => {
   return (
     <div className="material-container">
