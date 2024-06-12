@@ -8,7 +8,7 @@ const material = () => {
     <div className="material-container">
       <h1>Geología</h1>
       <CSubject />
-      <itineraries />
+      < itineraries/>
     </div>
   );
 };

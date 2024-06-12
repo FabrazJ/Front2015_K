@@ -1,4 +1,4 @@
-// src/components/Itineraries.js
+// src/components/itineraries.js
 import React from 'react';
 
 const itineraries = () => {

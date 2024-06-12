@@ -2,12 +2,12 @@ import './App.css';
 import React from 'react';
 import material from './components/material';
 
-function App() {
+const App = () => {
   return (
-    <div className='App'>
-      <material></material>
+    <div className="App">
+      <material />
     </div>
   );
-}
+};
 
 export default App;
