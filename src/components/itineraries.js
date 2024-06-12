@@ -1,7 +1,7 @@
-// src/components/itineraries.js
+// src/components/Itineraries.js
 import React from 'react';
 
-const itineraries = () => {
+const Itineraries = () => {
   return (
     <div className="itineraries">
       <i className="info-icon">ℹ️</i>
@@ -13,4 +13,4 @@ const itineraries = () => {
   );
 };
 
-export default itineraries;
+export default Itineraries;

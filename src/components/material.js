@@ -1,16 +1,17 @@
-// src/components/Geology.js
+// src/components/material.js
 import React from 'react';
 import CSubject from './CSubject';
-import itineraries from './itineraries';
+import Itineraries from './Itineraries';
+// Styles
 import '../style/prueba.css'
-const material = () => {
+const Material = () => {
   return (
     <div className="material-container">
-      <h1>Geología</h1>
+      <h1>___________-</h1>
       <CSubject />
-      < itineraries/>
+      <Itineraries/>
     </div>
   );
 };
 
-export default material;
+export default Material;
