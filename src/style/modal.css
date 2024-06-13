@@ -1,0 +1,103 @@
+/* Archivo: ../style/modal.css */
+
+/* Estilo general para la sección de materias complementarias */
+.complementary-subjects {
+    position: relative;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .complementary-subjects .info-icon {
+    margin-right: 8px;
+    font-size: 24px;
+  }
+  
+  .complementary-subjects a {
+    color: #007BFF;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .complementary-subjects a:hover {
+    color: #0056b3;
+  }
+  
+  /* Estilo para el overlay del modal */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Estilo para el contenido del modal */
+  .modal {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* Botón de cerrar */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Contenido personalizado del modal */
+  .custom-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .custom-content p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .custom-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #444;
+  }
+  
+  .custom-content ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Estilos adicionales para hacer el modal más atractivo */
+  .modal h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .modal p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .modal ul {
+    margin-top: 20px;
+  }
+  
+  .modal ul li {
+    font-size: 16px;
+  }
+  
