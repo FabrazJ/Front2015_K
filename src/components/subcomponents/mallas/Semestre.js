@@ -1,40 +1,29 @@
-// import React from 'react';
-// import Materia from './Materia';
-// import { Row, Col } from 'react-bootstrap';
-
-// const Semestre = ({ semestre, materias }) => {
-//     return (
-//         <div>
-//             <h2>Semestre {semestre}</h2>
-//             <Row>
-//                 {materias.map((materia, index) => (
-//                     <Col key={index}>
-//                         <Materia title={materia.title} credits={materia.credits} image={materia.image} />
-//                     </Col>
-//                 ))}
-//             </Row>
-//         </div>
-//     );
-// }
-
-// export default Semestre;
 import React from 'react';
+import Box from './Box';
+import Arrow from './Arrow';
+import { Row, Col } from 'react-bootstrap';
+import '../../../style/semestre.css';
 
-const Semestre = ({ semestre, materias }) => {
+const Semestre = ({ semestre, materias, showArrows }) => {
     if (!Array.isArray(materias)) {
         return <div>No hay materias disponibles para el semestre {semestre}</div>;
     }
 
     return (
-        <div>
+        <div className="semestre">
             <h2>Semestre {semestre}</h2>
-            {materias.map((materia, index) => (
-                <div key={index}>
-                    <img src={materia.image} alt={materia.title} />
-                    <h3>{materia.title}</h3>
-                    <p>Créditos: {materia.credits}</p>
-                </div>
-            ))}
+            <Row className="justify-content-center">
+                {materias.map((materia, index) => (
+                    <Col key={index} className="d-flex justify-content-center">
+                        <Box title={materia.title} code={materia.code || ''} credits={materia.credits} color="bg-light" />
+                    </Col>
+                ))}
+            </Row>
+            {showArrows && (
+                <Row className="justify-content-center">
+                    <Arrow />
+                </Row>
+            )}
         </div>
     );
 };

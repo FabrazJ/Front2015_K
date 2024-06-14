@@ -2,11 +2,34 @@
 .App {
   font-family: Arial, sans-serif;
   text-align: center;
+  padding: 20px;
+
 }
+
+
+
 
 h1 {
   color: #333;
 }
+
+/* .react-flow__node {
+  background: #ffcc00;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+} */
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid black;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
 
 .App-logo {
   height: 40vmin;
