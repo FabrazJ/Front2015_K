@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import Material from './components/Material';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
