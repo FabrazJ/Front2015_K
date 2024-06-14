@@ -10,6 +10,7 @@ const Material = () => {
       <h1>Computación</h1>
       <CSubject />
       <Itineraries/>
+      {/* <Malla /> */}
     </div>
   );
 };
