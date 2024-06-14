@@ -3,8 +3,8 @@ import { Modal, Button } from 'react-bootstrap';
 
 const courses = [
   { code: 'MATG1048', name: 'Ecuaciones Diferenciales y Álgebra Lineal', prereqs: ['Cálculo Vectorial', 'Fundamentos de Programación'], description: 'Este curso transversal está dirigido...' }
-    //Ingresar codigo
 
+  
 ];
 
 const CourseModal = ({ show, handleClose, course }) => (
