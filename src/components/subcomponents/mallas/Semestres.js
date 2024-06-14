@@ -55,20 +55,18 @@ const semestresData = [
 
 const Semestres = () => {
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {/* Semestres horizontales */}
-            <div style={{ display: 'flex', flexDirection: 'row', gap: '10px', marginBottom: '10px' }}>
-                {semestresData.slice(0, 3).map((data, index) => (
-                    <div key={index} style={{ flex: 1 }}>
-                        <Semestre semestre={data.semestre} materias={data.materias} />
-                    </div>
-                ))}
-            </div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+            {/* Primeras dos columnas */}
+            {semestresData.slice(0, 2).map((data, index) => (
+                <div key={index}>
+                    <Semestre semestre={data.semestre} materias={data.materias} />
+                </div>
+            ))}
 
             {/* Semestres verticales */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '10px' }}>
-                {semestresData.slice(3, 6).map((data, index) => (
-                    <div key={index}>
+            <div style={{ gridColumn: 'span 2', marginTop: '20px' }}>
+                {semestresData.slice(2).map((data, index) => (
+                    <div key={index} style={{ marginBottom: '20px' }}>
                         <Semestre semestre={data.semestre} materias={data.materias} />
                     </div>
                 ))}
