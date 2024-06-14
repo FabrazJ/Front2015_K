@@ -11,7 +11,6 @@ const Semestre = ({ semestre, materias, showArrows }) => {
 
     return (
         <div className="semestre">
-            <h2>Semestre {semestre}</h2>
             <Row className="justify-content-center">
                 {materias.map((materia, index) => (
                     <Col key={index} className="d-flex justify-content-center">

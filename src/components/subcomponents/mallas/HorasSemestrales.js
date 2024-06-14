@@ -8,12 +8,12 @@ const HorasSemestrales = () => {
             <Card.Body>
                 <Card.Title>Horas Semestrales</Card.Title>
                 <Card.Text>
-                    {horas.map((hora, index) => (
+                    {/* {horas.map((hora, index) => (
                         <div key={index} className="number-container">
                             <div className="square"></div>
                             <div className="number">{hora}</div>
                         </div>
-                    ))}
+                    ))} */}
                 </Card.Text>
             </Card.Body>
         </Card>
