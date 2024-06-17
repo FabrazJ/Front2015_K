@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container, Row, Col, Card, Image, Table } from 'react-bootstrap';
-
+import simbologiaImage from '../img/Simbologia.PNG'
+import Titulacion from '../img/Titulacion.png'
 const Simbologia = () => {
     return (
         <Container>
             <Row>
                 {/* Imagen principal */}
                 <Col md={{ span: 4, offset: 4 }} className="text-center mb-3">
-                    <Image src="../img/Simbologia.PNG" height={200} width={200} alt="Simbologia" rounded />
+                <Image src={simbologiaImage} alt="Simbologia" width={200} height={200} />
                 </Col>
             </Row>
 
@@ -28,19 +29,19 @@ const Simbologia = () => {
                 <Col lg={{ span: 7, offset: 1 }} className="table-bordered p-3">
                     <h5 className="text-center">TIPOS DE MATERIAS</h5>
                     <Row className="text-center">
-                        <Col><ImageLabel imageSrc="../../Images/Matematicas.PNG" label="MATEMÁTICAS Y CIENCIAS BÁSICAS" hours="720" /></Col>
-                        <Col><ImageLabel imageSrc="../../Images/Titulacion.PNG" label="U DE INTEGRACIÓN CURRICULAR" hours="384" /></Col>
-                        <Col><ImageLabel imageSrc="../../Images/FormPROFESIONAL.PNG" label="FORMACIÓN PROFESIONAL" hours="2928" /></Col>
+                        <Col><ImageLabel imageSrc="../img/Matematicas.png" label="MATEMÁTICAS Y CIENCIAS BÁSICAS" hours="720" /></Col>
+                        <Col><ImageLabel imageSrc="Titulacion" label="U DE INTEGRACIÓN CURRICULAR" hours="384" /></Col>
+                        <Col><ImageLabel imageSrc="../img/FormPROFESIONAL.png" label="FORMACIÓN PROFESIONAL" hours="2928" /></Col>
                     </Row>
                     <Row className="mt-3 text-center">
-                        <Col><ImageLabel imageSrc="../../Images/eduacionGeneral.PNG" label="EDUCACIÓN GENERAL" hours="1008" /></Col>
-                        <Col><ImageLabel imageSrc="../../Images/itinerario2.PNG" label="ITINERARIO" hours="288" /></Col>
-                        <Col><ImageLabel imageSrc="../../Images/COMPLEMENTARIAH.PNG" label="C. DE HUMANÍSTICA" hours="48" /></Col>
+                        <Col><ImageLabel imageSrc="../img/eduacionGeneral.png" label="EDUCACIÓN GENERAL" hours="1008" /></Col>
+                        <Col><ImageLabel imageSrc="../img/itinerario2.png" label="ITINERARIO" hours="288" /></Col>
+                        <Col><ImageLabel imageSrc="../img/COMPLEMENTARIAH.png" label="C. DE HUMANÍSTICA" hours="48" /></Col>
                     </Row>
                     <Row className="mt-3 text-center">
-                        <Col><ImageLabel imageSrc="../../Images/COMPLEMENTARIAA.PNG" label="C. DE ARTE Y DEPORTES" hours="48" /></Col>
-                        <Col><ImageLabel imageSrc="../../Images/PRACTICAS.PNG" label="PRÁCTICAS COMUNITARIAS" hours="96" /></Col>
-                        <Col><ImageLabel imageSrc="../../Images/PRACTICAS.PNG" label="PRÁCTICAS EMPRESARIALES" hours="96" /></Col>
+                        <Col><ImageLabel imageSrc="../img/complementariaA.png" label="C. DE ARTE Y DEPORTES" hours="48" /></Col>
+                        <Col><ImageLabel imageSrc="../img/practicas.png" label="PRÁCTICAS COMUNITARIAS" hours="96" /></Col>
+                        <Col><ImageLabel imageSrc="../img/practicas.png" label="PRÁCTICAS EMPRESARIALES" hours="96" /></Col>
                     </Row>
                 </Col>
             </Row>
