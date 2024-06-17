@@ -5,6 +5,7 @@ import Itineraries from './Itineraries';
 import Semestres from './subcomponents/mallas/Semestres';
 import HorasSemestrales from './subcomponents/mallas/HorasSemestrales';
 import Niveles from './subcomponents/mallas/Niveles';
+import Simbologia from './Simbologia';
 // Styles
 import '../style/prueba.css'
 //Contenedor de prueba
@@ -28,6 +29,7 @@ const Material = () => {
           <HorasSemestrales />
         </Col>
       </Row>
+      <Simbologia/>
     </Container>
   );
 };
