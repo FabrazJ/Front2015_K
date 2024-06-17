@@ -2,6 +2,12 @@ import React from 'react';
 import { Container, Row, Col, Card, Image, Table } from 'react-bootstrap';
 import simbologiaImage from '../img/Simbologia.PNG'
 import Titulacion from '../img/Titulacion.png'
+import Matematicas from '../img/Matematicas.png'
+import FormProfesional from '../img/FormPROFESIONAL.png'
+import EducacionGeneral from '../img/eduacionGeneral.png'
+import Itinerario2 from '../img/Itinerario2.png'
+import ComplementariaA from '../img/complementariaA.png'
+
 const Simbologia = () => {
     return (
         <Container>
@@ -29,14 +35,14 @@ const Simbologia = () => {
                 <Col lg={{ span: 7, offset: 1 }} className="table-bordered p-3">
                     <h5 className="text-center">TIPOS DE MATERIAS</h5>
                     <Row className="text-center">
-                        <Col><ImageLabel imageSrc="../img/Matematicas.png" label="MATEMÁTICAS Y CIENCIAS BÁSICAS" hours="720" /></Col>
-                        <Col><ImageLabel imageSrc="Titulacion" label="U DE INTEGRACIÓN CURRICULAR" hours="384" /></Col>
-                        <Col><ImageLabel imageSrc="../img/FormPROFESIONAL.png" label="FORMACIÓN PROFESIONAL" hours="2928" /></Col>
+                        <Col><Image src={Matematicas} label="MATEMÁTICAS Y CIENCIAS BÁSICAS" hours="720" /></Col>
+                        <Col><Image src={Titulacion} label="U DE INTEGRACIÓN CURRICULAR" hours="384" /></Col>
+                        <Col><Image src={FormProfesional}  label="FORMACIÓN PROFESIONAL" hours="2928" /></Col>
                     </Row>
                     <Row className="mt-3 text-center">
-                        <Col><ImageLabel imageSrc="../img/eduacionGeneral.png" label="EDUCACIÓN GENERAL" hours="1008" /></Col>
-                        <Col><ImageLabel imageSrc="../img/itinerario2.png" label="ITINERARIO" hours="288" /></Col>
-                        <Col><ImageLabel imageSrc="../img/COMPLEMENTARIAH.png" label="C. DE HUMANÍSTICA" hours="48" /></Col>
+                        <Col><Image src={EducacionGeneral}  label="EDUCACIÓN GENERAL" hours="1008" /></Col>
+                        <Col><Image src={Itinerario2}  label="ITINERARIO" hours="288" /></Col>
+                        <Col><Image src={ComplementariaA}  label="C. DE HUMANÍSTICA" hours="48" /></Col>
                     </Row>
                     <Row className="mt-3 text-center">
                         <Col><ImageLabel imageSrc="../img/complementariaA.png" label="C. DE ARTE Y DEPORTES" hours="48" /></Col>
