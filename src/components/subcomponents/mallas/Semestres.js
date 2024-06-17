@@ -18,7 +18,7 @@ const Semestres = () => {
 
   const redirectToCAS = () => {
     const service = window.location.href.split('?')[0];
-    window.location.href = `https://auth.espol.edu.ec/login?service=${service}`;
+    // window.location.href = `https://auth.test.espol.edu.ec/login?service=${service}`;
   };
 
   const validateToken = async (token) => {

@@ -3,7 +3,8 @@ import { Card } from 'react-bootstrap';
 
 const Materia = ({ title, credits, image }) => {
     return (
-        <Card style={{ width: '18rem', margin: '10px' }}>
+        <Card style={{ width: '18rem', margin: '10px', border: 'none'  }}>        
+
             <Card.Img variant="top" src={image} />
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
