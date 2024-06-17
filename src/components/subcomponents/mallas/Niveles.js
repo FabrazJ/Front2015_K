@@ -7,7 +7,7 @@ const Niveles = () => {
             <Card.Body>
                 <Card.Title>Niveles</Card.Title>
                 <Card.Text>
-                    {/* Add the content for Niveles here */}
+                <br/>
                     NIVEL 100 - I<br/><br/><br/>
                     NIVEL 100 - II<br/><br/><br/>
                     NIVEL 200 - I<br/><br/><br/>
