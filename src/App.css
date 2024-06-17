@@ -7,6 +7,9 @@
 }
 
 /* Estilos */
+
+/* src/App.css */
+
 /* .number-container {
   position: relative;
   display: inline-block;
@@ -73,6 +76,7 @@ h1 {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {

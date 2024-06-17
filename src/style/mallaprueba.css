@@ -1,0 +1,27 @@
+/* src/components/Malla.css */
+.malla {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .malla h1 {
+    color: #333;
+  }
+  
+  .malla h2 {
+    color: #555;
+  }
+  
+  .malla ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .malla li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  

@@ -62,6 +62,7 @@ const Semestres = () => {
                     <Semestre semestre={data.semestre} materias={data.materias} />
                 </div>
             ))}
+            {/* Prueba */}
 
             {/* Semestres verticales */}
             <div style={{ gridColumn: 'span 2', marginTop: '20px' }}>
