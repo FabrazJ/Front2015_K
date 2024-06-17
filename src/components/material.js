@@ -2,15 +2,16 @@
 import React from 'react';
 import CSubject from './CSubject';
 import Itineraries from './Itineraries';
-import Semestres from './subcomponents/mallas/Semestres';
+// import Semestres from './subcomponents/mallas/Semestres';
 import HorasSemestrales from './subcomponents/mallas/HorasSemestrales';
 import Niveles from './subcomponents/mallas/Niveles';
 import Simbologia from './Simbologia';
+import SemestresPrueba from './subcomponents/mallas/SemestresPrueba';
 // Styles
 import '../style/prueba.css'
 //Contenedor de prueba
 import { Container, Row, Col } from 'react-bootstrap';
-
+  
 const Material = () => {
   return (
     <Container >
@@ -23,7 +24,7 @@ const Material = () => {
           <Niveles />
         </Col>
         <Col md={8}>
-          <Semestres />
+          <SemestresPrueba />
         </Col>
         <Col md={2}>
           <HorasSemestrales />

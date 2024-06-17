@@ -1,0 +1,21 @@
+/* semestreprueba.css */
+.image {
+    width: 100%; /* La imagen ocupa el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Quita el espacio debajo de la imagen */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición del centro */
+    color: white; /* Color del texto */
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Hace el texto más visible */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Agrega sombra al texto */
+    text-align: center; /* Centra el texto */
+    white-space: nowrap; /* Evita que el texto se quiebre en múltiples líneas */
+    width: 100%; /* Asegura que el contenedor del texto tenga el mismo ancho que la imagen */
+    cursor: pointer; /* Cambia el cursor a una mano cuando el texto es clicado */
+}
