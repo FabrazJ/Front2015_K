@@ -7,6 +7,7 @@ import FormProfesional from '../img/FormPROFESIONAL.png'
 import EducacionGeneral from '../img/eduacionGeneral.png'
 import Itinerario2 from '../img/Itinerario2.png'
 import ComplementariaA from '../img/complementariaA.png'
+import Practicas from '../img/practicas.png'
 
 const Simbologia = () => {
     return (
@@ -45,9 +46,9 @@ const Simbologia = () => {
                         <Col><Image src={ComplementariaA}  label="C. DE HUMANÍSTICA" hours="48" /></Col>
                     </Row>
                     <Row className="mt-3 text-center">
-                        <Col><ImageLabel imageSrc="../img/complementariaA.png" label="C. DE ARTE Y DEPORTES" hours="48" /></Col>
-                        <Col><ImageLabel imageSrc="../img/practicas.png" label="PRÁCTICAS COMUNITARIAS" hours="96" /></Col>
-                        <Col><ImageLabel imageSrc="../img/practicas.png" label="PRÁCTICAS EMPRESARIALES" hours="96" /></Col>
+                        <Col><Image src={ComplementariaA}  label="C. DE ARTE Y DEPORTES" hours="48" /></Col>
+                        <Col><Image src={Practicas}  label="PRÁCTICAS COMUNITARIAS" hours="96" /></Col>
+                        <Col><Image src={Practicas} label="PRÁCTICAS EMPRESARIALES" hours="96" /></Col>
                     </Row>
                 </Col>
             </Row>
