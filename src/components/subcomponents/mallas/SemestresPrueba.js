@@ -1,45 +1,38 @@
-// import React from 'react';
-// import { Card } from 'react-bootstrap';
-// import ImagePrueba from '../../../img/Matematicas.png'; // Asegúrate de ajustar la ruta al archivo de imagen.
-// import semestreprueba from "../../../style/semestreprueba.css"
-
-// const SemestresPrueba = () => {
-//     return (
-//         <Card style={{ border: 'none', position: 'relative', display: 'inline-block' }}>
-//             <img src={ImagePrueba} alt="Descripción de la imagen" className="image" />
-//             <div className="text-overlay">Filosofia</div>
-//         </Card>
-//     );
-// }
-
-// export default SemestresPrueba;
 import React, { useState } from 'react';
 import { Card, Modal, Button } from 'react-bootstrap';
 import ImagePrueba from '../../../img/MallaPrueba.jpeg'; // Asegúrate de ajustar la ruta al archivo de imagen.
-import semestreprueba from "../../../style/semestreprueba.css"
 
 const SemestresPrueba = () => {
-    // Estado para controlar la visibilidad del modal
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(false);  // Estado para controlar la visibilidad del modal
+    const [selectedBox, setSelectedBox] = useState(null);  // Estado para almacenar el recuadro seleccionado
 
     // Funciones para abrir y cerrar el modal
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    // Función para manejar el clic en el recuadro y mostrar el modal con detalles
+    const handleBoxClick = (box) => {
+        setSelectedBox(box);
+        handleShow();  // Mostrar el modal al seleccionar un recuadro
+    };
+
     return (
         <>
-            <Card style={{ border: 'none', position: 'relative', display: 'inline-block' }}>
+            <Card
+                style={{ border: 'none', position: 'relative', display: 'inline-block', cursor: 'pointer' }}
+                onClick={() => handleBoxClick({ title: 'Filosofia', content: 'Información de Filosofia' })}
+            >
                 <img src={ImagePrueba} alt="Descripción de la imagen" className="image" />
-                {/* <div className="text-overlay" onClick={handleShow}>Filosofia</div> */}
+                <div className="text-overlay">Filosofia</div>
             </Card>
 
+            {/* Modal para mostrar los detalles */}
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Detalles de Filosofia</Modal.Title>
+                    <Modal.Title>Detalles de {selectedBox ? selectedBox.title : ''}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    Aquí puedes agregar información detallada sobre la filosofía. 
-                    Puedes incluir texto, imágenes u otros elementos que consideres relevantes.
+                    {selectedBox ? selectedBox.content : ''}
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
