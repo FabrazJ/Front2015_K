@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Button, Table } from 'react-bootstrap';
+import { Modal, Button, Table, Alert } from 'react-bootstrap';
 
 const ModalD = ({ course, onClose }) => (
   <Modal show={!!course} onHide={onClose} size="lg">
@@ -7,6 +7,7 @@ const ModalD = ({ course, onClose }) => (
       <Modal.Title>Detalles de {course.title}</Modal.Title>
     </Modal.Header>
     <Modal.Body>
+      {/* Tabla para Código y Materia */}
       <Table bordered>
         <tbody>
           <tr>
@@ -19,26 +20,25 @@ const ModalD = ({ course, onClose }) => (
           </tr>
         </tbody>
       </Table>
-      <Table bordered>
-        <thead>
-          <tr>
-            <th>Código</th>
-            <th>Materia</th>
-            <th>Tipo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{course.prerequisite.code}</td>
-            <td>{course.prerequisite.subject}</td>
-            <td>{course.prerequisite.type}</td>
-          </tr>
-        </tbody>
-      </Table>
+
+      {/* Mensaje de Requisitos */}
+      {course.prerequisitesMet ? (
+        <Alert variant="info">
+          Esta materia tiene como requisito {course.prerequisiteCount} materias aprobadas
+        </Alert>
+      ) : (
+        <Alert variant="danger">
+          No cumple con los requisitos necesarios ({course.prerequisiteCount} materias aprobadas requeridas)
+        </Alert>
+      )}
+
+      {/* Descripción del Curso */}
       <h5>Descripción</h5>
       <p>{course.description}</p>
+
+      {/* Botón de Descargar contenido */}
       <div className="d-flex justify-content-center">
-        <Button variant="primary">Descargar contenido</Button>
+        <Button variant="primary" onClick={() => downloadContent(course.code)}>Descargar contenido</Button>
       </div>
     </Modal.Body>
     <Modal.Footer>
@@ -48,5 +48,11 @@ const ModalD = ({ course, onClose }) => (
     </Modal.Footer>
   </Modal>
 );
+
+// Función simulada para descargar contenido
+const downloadContent = (courseCode) => {
+  // Aquí se manejaría la lógica para descargar el contenido, por ejemplo, redirigir a un link de descarga.
+  alert(`Descargando contenido para el curso: ${courseCode}`);
+};
 
 export default ModalD;
