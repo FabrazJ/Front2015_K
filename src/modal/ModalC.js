@@ -35,6 +35,12 @@ const ModalC = ({ course, onClose }) => (
           </tr>
         </tbody>
       </Table>
+      <div className="d-flex justify-content-center my-3">
+        <Button variant="success">
+          Sílabo Español
+        </Button>
+      </div>
+
       <h5>Descripción</h5>
       <p>{course.description}</p>
       <div className="d-flex justify-content-center">
