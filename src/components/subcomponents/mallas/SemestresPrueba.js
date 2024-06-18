@@ -17,7 +17,7 @@ import ImagePrueba from '../../../img/MallaPrueba.jpeg';
 
 const SemestresPrueba = () => {
     const [selectedCourse, setSelectedCourse] = useState(null);
-  
+
     const handleAreaClick = (courseId) => {
       const course = courses.find((course) => course.id === courseId);
       setSelectedCourse(course);
