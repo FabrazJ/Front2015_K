@@ -15,7 +15,7 @@
 // export default SemestresPrueba;
 import React, { useState } from 'react';
 import { Card, Modal, Button } from 'react-bootstrap';
-import ImagePrueba from '../../../img/Matematicas.png'; // Asegúrate de ajustar la ruta al archivo de imagen.
+import ImagePrueba from '../../../img/MallaPrueba.jpeg'; // Asegúrate de ajustar la ruta al archivo de imagen.
 import semestreprueba from "../../../style/semestreprueba.css"
 
 const SemestresPrueba = () => {
@@ -30,7 +30,7 @@ const SemestresPrueba = () => {
         <>
             <Card style={{ border: 'none', position: 'relative', display: 'inline-block' }}>
                 <img src={ImagePrueba} alt="Descripción de la imagen" className="image" />
-                <div className="text-overlay" onClick={handleShow}>Filosofia</div>
+                {/* <div className="text-overlay" onClick={handleShow}>Filosofia</div> */}
             </Card>
 
             <Modal show={show} onHide={handleClose}>
