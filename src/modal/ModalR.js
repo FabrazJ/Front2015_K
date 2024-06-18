@@ -1,7 +1,7 @@
 import React from 'react';
 import { Modal, Button, Table } from 'react-bootstrap';
 
-const ModalG = ({ course, onClose }) => (
+const ModalR = ({ course, onClose }) => (
   <Modal show={!!course} onHide={onClose} size="lg">
     <Modal.Header closeButton>
       <Modal.Title>Detalles de {course.title}</Modal.Title>
@@ -55,4 +55,4 @@ const ModalG = ({ course, onClose }) => (
   </Modal>
 );
 
-export default ModalG;
+export default ModalR;
